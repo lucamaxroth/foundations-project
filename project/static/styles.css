@@ -1,3 +1,87 @@
+:root {
+    --font-size: 14pt;
+    font-family: "Source Sans Pro","Calibri","Gill Sans","Open Sans",sans-serif;
+}
+
+body {
+    font-size: var(--font-size);
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.project-container {
+    width: 1000px;
+    max-width: 80%;
+}
+
+.project {
+    text-align: center;
+    border: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+}
+
+.project-title {
+    display: block;
+}
+
+.project-picture {
+    height: auto;
+    width: 100;
+    float: left;
+}
+
+#add-project {
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+#project-template {
+    display: none;
+}
+
+.button {
+    border: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    background: #f2f2f2;
+    max-width: 20%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #cccccc;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
 /* body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 2rem;

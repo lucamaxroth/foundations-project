@@ -4,12 +4,12 @@
     <title> {{ page_title }}</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}" defer></script>
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
 
 <body>
-{% block body%} {% endblock %}
+{% block body%}
 <!--    <header>
         <div class="banner">
             <h1> My Project</h1>
@@ -21,5 +21,6 @@
     <footer>
         <h3> <em> By Your Name Here </em></h3>
     </footer>
--->    
+-->
+{% endblock %}
 </body>
