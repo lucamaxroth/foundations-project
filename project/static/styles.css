@@ -8,11 +8,15 @@ body {
 }
 
 h1 {
-  text-align: center;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
 }
 
 p {
-    text-align: center;
+    text-align: justify;
 }
 
 a {
@@ -30,13 +34,12 @@ main {
     max-width: 80%;
 }
 
-.project {
-    text-align: center;
+.content-box {
     border: 5px;
     border-style: solid;
     border-radius: 10px;
-    width: 100%;
     padding: 20px;
+    margin: 20px;
 }
 
 .project-title {
@@ -45,14 +48,14 @@ main {
 
 .project-picture {
     height: auto;
-    width: 100;
+    width: 20%;
     float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 #add-project {
-    display: block;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 #project-template {
@@ -73,6 +76,19 @@ main {
     cursor: pointer;
 }
 
+button[type=submit] {
+    border: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    background: #f2f2f2;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+}
+
 .button:hover {
     background: #cccccc;
 }
@@ -81,24 +97,3 @@ footer {
     display: flex;
     justify-content: center;
 }
-
-/* body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 2rem;
-}
-
-.banner {
-    margin-top: 2rem;
-    color: black;
-    margin-bottom: 1rem;
-}
-
-footer {
-    margin-top: 5rem;
-    text-align: center;
-}
-
-.button{
-    color: antiquewhite;
-    background-color:firebrick;
-} */
