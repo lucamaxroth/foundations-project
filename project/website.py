@@ -19,7 +19,8 @@ def form():
     # This function writes the forms input into a json.
     # Therefore the picture is given a random name.
     # The picture is referenced with its files location.
-    with open('project/static/projects.json', 'r', encoding='utf-8') as projects_file:
+    with open('project/static/projects.json', 'r', encoding='utf-8') as \
+         projects_file:
         projects_file = json.load(projects_file)
 
         file_name = str(uuid4()) + ".jpeg"
@@ -36,7 +37,8 @@ def form():
         projects_file.append(project)
 
     # Dumps the old json and overwrites it with the newly created json.
-    with open('project/static/projects.json', 'w+', encoding='utf-8') as out_file:
+    with open('project/static/projects.json', 'w+', encoding='utf-8') as \
+         out_file:
         json.dump(projects_file, out_file, indent='  ')
 
     return redirect('/', code="302")
